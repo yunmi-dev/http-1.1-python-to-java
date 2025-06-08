@@ -15,7 +15,7 @@ public class Prg03JsonExample {
             String jsonContent = Files.readString(Paths.get("src/Prg03JsonExample.json"));
 
             // Load JSON format
-            JSONObject superHeroes = new JSONObject(jsonContent);
+            JSONObject superHeroes = new JSONObject(jsonContent);   // JSON Deserialization
 
             System.out.println(superHeroes.getString("homeTown"));
             System.out.println(superHeroes.getBoolean("active"));
